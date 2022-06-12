@@ -1,6 +1,5 @@
 # Basic level
 
-- @Component
 - Component styles with :host
 - @Input and property bindings
 - @Output, EventEmitter and event bindings
