@@ -1,3 +1,14 @@
 <div class="mat-typography content">
   <p class="mat-body-1">Basic works</p>
+  <app-progress-bar [progress]="counterProgress"></app-progress-bar>
+  <app-countdown #countdown
+    [init]="totalCountdown"
+    (onDecrease)="updateProgress($event)"
+    (onComplete)="countdownFinished()"
+  ></app-countdown>
+  <div class="initInput">
+    <mat-label for="totalCountdown"><p>Init on</p></mat-label>
+    <input matInput id="totalCountdown" type="text" [(ngModel)]="totalCountdown" >
+  </div>
+  <button mat-raised-button (click)="countdown.startCountdown(); counterProgress=0;">Restart counter</button>
 </div>

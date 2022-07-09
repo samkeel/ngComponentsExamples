@@ -30,6 +30,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatDividerModule } from '@angular/material/divider';
+import { FormsModule } from '@angular/forms';
+
 
 const components = [HeaderComponent, HomeComponent];
 
@@ -57,6 +59,7 @@ const matModules = [
   MatRadioModule,
   MatSlideToggleModule,
   MatDividerModule,
+  FormsModule
 ];
 
 @NgModule({
